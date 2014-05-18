@@ -188,6 +188,11 @@
 											return content;
 										}
 									});
+									
+									var legend = new Rickshaw.Graph.Legend({
+										graph: graph,
+										element: document.querySelector('#graph')
+										});
 
 									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .slider').prop('id', 'slider-' + feedId + '-' + datastream.id);
 									var slider = new Rickshaw.Graph.RangeSlider({
