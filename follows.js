@@ -193,6 +193,7 @@
 										graph: graph,
 										element: document.querySelector('#graph')
 										});
+                                                                        legend.render();
 
 									$('#feed-' + feedId + ' .datastreams .datastream-' + datastream.id + ' .slider').prop('id', 'slider-' + feedId + '-' + datastream.id);
 									var slider = new Rickshaw.Graph.RangeSlider({
