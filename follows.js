@@ -166,7 +166,7 @@
 									
 									var tickFormat = function(d) {
     d = new Date(d)
-    return d3.time.format("%c")(d)
+    return d3.time.format("%c")(d-14400000)
 }
 
 									// Define and Render X Axis (Time Values)
