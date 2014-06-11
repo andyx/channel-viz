@@ -164,15 +164,10 @@
 
 									var ticksTreatment = 'glow';
 									
-									var tickFormat = function(d) {
-    d = new Date(d)
-    return d3.time.format("%c")(d-14400000)
-}
-
 									// Define and Render X Axis (Time Values)
 									var xAxis = new Rickshaw.Graph.Axis.Time( {
 										graph: graph,
-									        tickFormat: tickFormat
+										ticksTreatment: ticksTreatment
 									});
 									xAxis.render();
 
